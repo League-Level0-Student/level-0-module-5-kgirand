@@ -11,16 +11,16 @@ public class CircleRing {
 
         // 1. Make a new Robot
     	Robot rob = new Robot();
-
+    	rob.setSpeed(255);
        //  2. Set your robot’s position to x=150 and y=200
 	rob.setX(150);
 	rob.setY(200);
         // 3. Put the robot's pen down
 	rob.penDown();
         // 4. Set the robot’s speed to 10
-	rob.setSpeed(250);
+
         // 5. Do everything below here 360 times (use i as the counter)
-for(int i = 0; i<361; i++) {
+for(int i = 0; i<351; i++) {
 	
 
 	        // 6. Move the robot 3 pixels
