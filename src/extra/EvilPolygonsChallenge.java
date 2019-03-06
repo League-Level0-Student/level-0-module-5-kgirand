@@ -20,6 +20,7 @@ public class EvilPolygonsChallenge {
 		if(colorChoice == 0) {
 		rob.setPenColor(Color.GREEN);	
 		rob.penDown();
+		rob.turn(90);
 		for(int i = 0; i<6; i++) {
 			rob.move(100);
 			rob.turn(60);
@@ -28,12 +29,12 @@ public class EvilPolygonsChallenge {
 		else if(colorChoice == 1) {
 		rob.setPenColor(Color.RED);
 		rob.penDown();
-		
+		rob.turn(90);
 		}
 		else if(colorChoice == 2) {
 		rob.setPenColor(Color.BLUE);
 		rob.penDown();
-		
+		rob.turn(90);
 		}
 		
 		//4. Ask the use how many polygons they want to be drawn.
@@ -52,10 +53,7 @@ public class EvilPolygonsChallenge {
 				rob.turn(60);
 				
 			}	
-			rob.penUp();
-			rob.turn(200);
 			rob.move(200);
-			rob.penDown();
 			}
 			}
 			else if(colorChoice == 1) {
@@ -67,10 +65,8 @@ public class EvilPolygonsChallenge {
 					rob.turn(60);
 					
 				}	
-				rob.penUp();
-				rob.turn(200);
+				
 				rob.move(200);
-				rob.penDown();
 				}
 			}
 			else if(colorChoice == 2) {
@@ -83,10 +79,9 @@ public class EvilPolygonsChallenge {
 					
 				}	
 				rob.penUp();
-				rob.turn(200);
 				rob.move(200);
 				rob.penDown();
-				}
+			}
 			}
 		//6. Make it so your shapes do not overlap
 
