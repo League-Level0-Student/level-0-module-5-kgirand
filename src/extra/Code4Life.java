@@ -34,6 +34,7 @@ else if(inputint>=3) {
 }
 	// 4. If it is more than 5, call the method below to play the Batman theme song.
 else {
+	JOptionPane.showMessageDialog(null, "You code alot");
 	playBatmanTheme();
 }
 }
