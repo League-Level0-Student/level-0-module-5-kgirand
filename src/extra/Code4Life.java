@@ -29,7 +29,7 @@ if(inputint<=2) {
 	// they're a Code Ninja
 else if(inputint>=3) {
 	if(inputint<=5) {
-		JOptionPane.showMessageDialog(null, "You are a coding ninja!");
+		JOptionPane.showMessageDialog(null, "You are a coding ninja");
 	}
 }
 	// 4. If it is more than 5, call the method below to play the Batman theme song.

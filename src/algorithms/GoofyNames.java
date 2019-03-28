@@ -17,15 +17,24 @@ System.out.println(input.toUpperCase());
 		//    Run your program to see that this works.
 		// 3. Loop through each character of the name (steps 4 - 6).
 		//    HINT: Use .length() to determine the number of characters in the String.
-
+System.out.println(input.length());
 			// 4. Create a String variable to store the next character of the name
 			//    using .substring(start, end)
 			//    HINT: replace 'start' and 'end' to get String with character at i 
-			
+String next = input.substring(0);
+System.out.println(next);			
+int intnext = Integer.parseInt(next);			
 			// 5. Use MODULO to set this variable to upper case for EVEN characters
 			//    and lower case for ODD characters.
-
-			
+for(int i = 0; i<input.length(); i++) {
+	if(input.charAt(intnext)%2 == 0){
+		System.out.println(input.charAt(intnext));
+	}
+	else {
+		System.out.println("...");
+	}
+	intnext ++;
+}			
 			// 6. ADD this String  (containing 1 char) to the goofyName String
 
 		
